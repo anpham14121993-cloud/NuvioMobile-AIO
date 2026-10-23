@@ -79,14 +79,7 @@ android {
         }
         create("playstore") {
             dimension = "distribution"
-        }
-        create("tv") {
-            dimension = "distribution"
-            ndk {
-                abiFilters.clear()
-                abiFilters += "armeabi-v7a"
-            }
-        }
+        }}
     }
 
     sourceSets.getByName("full") {
